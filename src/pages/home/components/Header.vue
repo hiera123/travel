@@ -1,0 +1,61 @@
+<template>
+  <div>
+    <div class="header-content">
+      <div class="left">
+        <span class="iconfont">&#xe65b;</span>
+      </div>
+      <div class="input">
+        <span class="iconfont icon-search">&#xe723;</span>
+        输入城市景点/游玩主题
+      </div>  
+      <div class="right">
+        城市
+          <span class="iconfont">&#xe6aa;</span>
+      </div>
+    </div>
+  </div>
+</template>
+
+<script>
+
+export default {
+  name: 'HomeHeader',
+  data () {
+    return {
+      
+    }
+  }
+}
+</script>
+
+<!-- Add "scoped" attribute to limit CSS to this component only -->
+<style lang="stylus" scoped>
+  .header-content
+    line-height :.86rem
+    display :flex
+    background :#00bce4
+    color: #fff
+    .left
+      width : .64rem
+      float :left
+      margin-left :.2rem
+    .right
+      float :right
+      width : 1.28rem
+      text-align :center
+    .input
+       flex :1
+       background :#fff
+       border-radius :.1rem
+       margin-top :.12rem
+       height :.64rem
+       line-height :.64rem
+       color:#ccc
+       padding-left :.2rem
+
+    
+      
+     
+</style>
+ 
+
