@@ -1,6 +1,6 @@
 <template>
     <div class="icons">
-        <div class="icon" v-for="item of list"  :key = item.id>
+        <div class="icon" v-for="item of list"  :key = "item.id">
             <img :src="item.imgUrl" class="icon-img">
             <p class="icon-text">{{item.desc}}</p>
         </div>

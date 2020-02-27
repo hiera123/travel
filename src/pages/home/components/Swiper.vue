@@ -3,7 +3,7 @@
     <div class="wrapper">
         <swiper :options="swiperOption">
             <!-- slides -->
-            <swiper-slide v-for="item of list" :key = item.id>
+            <swiper-slide v-for="item of list" :key = "item.id">
                 <img :src="item.imgUrl" class="swiper-img">
             </swiper-slide>
             
