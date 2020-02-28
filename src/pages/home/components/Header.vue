@@ -8,10 +8,10 @@
         <span class="iconfont icon-search">&#xe723;</span>
         输入城市景点/游玩主题
       </div>  
-      <div class="right">
+      <router-link class="right" to="city">
         城市
           <span class="iconfont">&#xe6aa;</span>
-      </div>
+      </router-link>
     </div>
   </div>
 </template>
@@ -35,6 +35,7 @@ export default {
     display :flex
     background :#00bce4
     color: #fff
+    
     .left
       width : .64rem
       float :left
@@ -43,6 +44,7 @@ export default {
       float :right
       width : 1.28rem
       text-align :center
+      color:#fff
     .input
        flex :1
        background :#fff
