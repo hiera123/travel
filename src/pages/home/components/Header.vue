@@ -9,7 +9,7 @@
         输入城市景点/游玩主题
       </div>  
       <router-link class="right" to="city">
-        城市
+        {{this.city}}
           <span class="iconfont">&#xe6aa;</span>
       </router-link>
     </div>
@@ -22,8 +22,20 @@ export default {
   name: 'HomeHeader',
   data () {
     return {
+      city:''
+    }
+  },
+  methods:{
+    getChangeCity(){
+      const routerCity = this.$route.query.e
+     
+      this.city = routerCity
       
     }
+  },
+  created(){
+    this.getChangeCity()
+
   }
 }
 </script>

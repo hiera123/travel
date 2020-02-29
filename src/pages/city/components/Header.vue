@@ -25,6 +25,7 @@ export default {
         text-align :center
         position :relative
         overflow :hidden
+        
         .header-text
             font-size :.4rem
             .header-icon

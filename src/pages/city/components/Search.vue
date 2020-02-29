@@ -16,6 +16,7 @@ export default {
         background :#00bce4
         color: #fff
         text-align :center
+      
         .search-input
             width:98%
             text-align :center
