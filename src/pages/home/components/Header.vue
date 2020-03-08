@@ -9,7 +9,7 @@
         输入城市景点/游玩主题
       </div>  
       <router-link class="right" to="city">
-        {{this.city}}
+        {{this.city1}}
           <span class="iconfont">&#xe6aa;</span>
       </router-link>
     </div>
@@ -17,13 +17,17 @@
 </template>
 
 <script>
-
+import { mapState } from 'vuex'
 export default {
   name: 'HomeHeader',
-  data () {
+  data(){
     return {
       city:''
     }
+  },
+  computed:{
+    ...mapState(['city1']),
+   
   },
   methods:{
     getChangeCity(){
@@ -54,9 +58,11 @@ export default {
       margin-left :.2rem
     .right
       float :right
-      width : 1.28rem
+      min-width : 1.24rem
+      padding: 0 .1rem
       text-align :center
       color:#fff
+     
     .input
        flex :1
        background :#fff
